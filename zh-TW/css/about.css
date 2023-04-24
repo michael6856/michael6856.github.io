@@ -101,7 +101,7 @@
     box-sizing: border-box;
 }
 
-.s1 {
+#as1 {
     background: url("https://cdn.discordapp.com/attachments/1012887987639566348/1099676798398251040/DSCF4290_polarr_1.png");
     background-size: cover;
     padding-left: 20px;
@@ -131,4 +131,20 @@
     display: block;
     width: 110%;
     margin:auto
+}
+
+.menu li {
+    position: relative;
+}
+.menu li:hover ul {
+    display: block;
+}
+
+.menu ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: none;
 }
