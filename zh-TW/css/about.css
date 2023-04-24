@@ -84,12 +84,12 @@
 }
 
 .infor_title{
-    font-size: 2em;
+    font-size: 1.1em;
     color: white;
 }
 
 .infor{
-    font-size: 0.5em;
+    font-size: 0.6em;
     color: white;
 }
 
@@ -152,4 +152,19 @@
 #rs1{
     background:url("https://cdn.discordapp.com/attachments/1099655296944705556/1099946623137755147/DSCF7313.JPG");
     background-size: cover;
+}
+
+.s_li a{
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.s_infor{
+    left: 10%;
+    color: white;
+    font-size: 0.6em;
 }
