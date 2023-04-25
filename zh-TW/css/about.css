@@ -83,14 +83,23 @@
     opacity: 0.7;
 }
 
-.infor_title{
-    font-size: 1.1em;
+.about_title{
+    font-size: 2em;
     color: white;
+    font-weight: 700;
+}
+
+.infor_title{
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
 }
 
 .infor{
     font-size: 0.6em;
     color: white;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .section {
@@ -167,4 +176,10 @@
     left: 10%;
     color: white;
     font-size: 0.6em;
+}
+
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span{
+    background-color: white;
 }

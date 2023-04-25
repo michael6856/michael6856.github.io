@@ -9,7 +9,5 @@ function nextSlide() {
 }
 
 new fullpage('#fullpage', {
-    controlArrows: false,
-    navigation: true,
-    slidesNavigation: true
+    autocomplete: true
 })
