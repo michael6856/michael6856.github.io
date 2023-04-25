@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap');
+
 * {
     font-family: 'Noto Sans TC', sans-serif;
     margin: 0;
@@ -26,10 +29,11 @@
 .menu a {
     position: relative;
     color: azure;
-    font-size: 1.1em;
+    font-size: 1.15em;
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 .menu a::after {
@@ -81,18 +85,22 @@
     text-align: center;
     font-size: 2em;
     opacity: 0.7;
+    font-family: 'Roboto', sans-serif;
 }
 
 .about_title{
     font-size: 2em;
     color: white;
     font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    opacity:0.85;
 }
 
 .infor_title{
-    font-size: 2em;
+    font-size: 1.4em;
     color: white;
     font-weight: 500;
+    font-family: 'Roboto', sans-serif;
 }
 
 .infor{
@@ -100,6 +108,7 @@
     color: white;
     margin-left: 10%;
     margin-right: 10%;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 .section {
@@ -111,7 +120,7 @@
 }
 
 #as1 {
-    background: url("https://cdn.discordapp.com/attachments/1012887987639566348/1099676798398251040/DSCF4290_polarr_1.png");
+    background: url("https://cdn.discordapp.com/attachments/1012887987639566348/1100335209590820934/DSCF4290_polarr_1.png");
     background-size: cover;
     padding-left: 20px;
     padding-right: 20px;
