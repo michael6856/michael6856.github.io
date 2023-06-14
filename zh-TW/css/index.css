@@ -221,3 +221,14 @@ article{
 #hb{
     /*background: url("https://cdn.discordapp.com/attachments/1099655296944705556/1100343817829371914/sponsor.png");*/
 }
+
+.cc{
+    position: absolute;
+    left: 1%;
+    bottom: 1%;
+}
+
+.cc_text{
+    color: white;
+    font-size: medium;
+}
