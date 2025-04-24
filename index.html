@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>園遊會點餐單</title>
+    <style>
+        body {
+            font-family: 'Arial'; padding: 1rem; margin: 0;
+            max-width: 100%; background: #fdfdfd;
+            font-size: 2rem;
+        }
+        h2 { text-align: center; font-size: 2.5rem; }
+        .section { border-top: 2px solid #aaa; margin-top: 20px; padding-top: 10px; }
+        label {
+            display: flex; justify-content: space-between; align-items: center;
+            margin: 10px 0;
+        }
+        input[type="number"], select {
+            width: 30%; font-size: 2rem;
+        }
+        button {
+            margin-top: 20px; padding: 15px; width: 100%;
+            font-size: 2rem; border-radius: 10px; border: none;
+            background-color: #4CAF50; color: white;
+            transition: background-color 0.3s;
+        }
+        button:disabled { background-color: #888; }
+        #result { margin-top: 20px; text-align: center; font-weight: bold; }
+    </style>
+</head>
+<body>
+<h2>園遊會點餐單</h2>
+<form id="orderForm">
+    <div class="section">
+        <h3>單點區</h3>
+        <label>真一中脆薯 ($35) <input type="number" name="真一中脆薯" value="0" min="0" max="1000"></label>
+        <label>真香雞米花 ($40) <input type="number" name="真香雞米花" value="0" min="0" max="1000"></label>
+        <label>香腸年糕串 ($35) <input type="number" name="香腸年糕串" value="0" min="0" max="1000"></label>
+        <label>蘋果氣泡飲 ($40) <input type="number" name="蘋果氣泡飲" value="0" min="0" max="1000"></label>
+        <label>蔓越莓氣泡飲 ($40) <input type="number" name="蔓越莓氣泡飲" value="0" min="0" max="1000"></label>
+        <label>白葡萄氣泡飲 ($40) <input type="number" name="白葡萄氣泡飲" value="0" min="0" max="1000"></label>
+    </div>
+
+    <div class="section">
+        <h3>套餐區</h3>
+        <p>
+            A套餐 ($70)：真一中脆薯 + 飲料<br>
+            B套餐 ($75)：真香雞米花 + 飲料<br>
+            C套餐 ($70)：香腸年糕串 + 飲料<br>
+            D套餐 ($110)：真一中脆薯 + 真香雞米花 + 飲料
+        </p>
+        <label>A套餐 <input type="number" name="A套餐" value="0" min="0" max="1000">
+            <select name="A飲料">
+                <option value="蘋果氣泡飲">蘋果</option>
+                <option value="蔓越莓氣泡飲">蔓越莓</option>
+                <option value="白葡萄氣泡飲">白葡萄</option>
+            </select>
+        </label>
+        <label>B套餐 <input type="number" name="B套餐" value="0" min="0" max="1000">
+            <select name="B飲料">
+                <option value="蘋果氣泡飲">蘋果</option>
+                <option value="蔓越莓氣泡飲">蔓越莓</option>
+                <option value="白葡萄氣泡飲">白葡萄</option>
+            </select>
+        </label>
+        <label>C套餐 <input type="number" name="C套餐" value="0" min="0" max="1000">
+            <select name="C飲料">
+                <option value="蘋果氣泡飲">蘋果</option>
+                <option value="蔓越莓氣泡飲">蔓越莓</option>
+                <option value="白葡萄氣泡飲">白葡萄</option>
+            </select>
+        </label>
+        <label>D套餐 <input type="number" name="D套餐" value="0" min="0" max="1000">
+            <select name="D飲料">
+                <option value="蘋果氣泡飲">蘋果</option>
+                <option value="蔓越莓氣泡飲">蔓越莓</option>
+                <option value="白葡萄氣泡飲">白葡萄</option>
+            </select>
+        </label>
+    </div>
+
+    <button type="submit" id="submitButton">送出訂單</button>
+</form>
+
+<div id="adminArea" style="display:none;">
+    <button id="clearButton">清空訂單</button>
+    <button id="totalButton">查詢總金額</button>
+    <div id="totalDisplay"></div>
+</div>
+
+<div id="result"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
